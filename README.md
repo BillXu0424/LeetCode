@@ -7,6 +7,8 @@ This is my solution to LeetCode problems.
 
 ### 1208. Get Equal Substrings Within Budget
 
+**Tag: Sliding Window, Double Pointers**
+
 You are given two strings `s` and `t` of the same length and an integer `maxCost`.
 
 You want to change `s` to `t`. Changing the `i`th character of `s` to `i`th character of `t` costs `|s[i] - t[i]|` (i.e., the absolute difference between the ASCII values of the characters).
@@ -43,6 +45,8 @@ Explanation: You cannot make any change, so the maximum length is 1.
 
 ### 131. Palindrome Partitioning
 
+**Tag： Dynamic Programming, Backtrace**
+
 Given a string `s`, partition `s` such that every substring of the partition is a **palindrome**. Return all possible palindrome partitioning of `s`.
 
 A **palindrome** string is a string that reads the same backward as forward.
@@ -66,6 +70,8 @@ Output: [["a"]]
 
 
 ### 1770. Maximum Score from Performing Multiplication Operations
+
+**Tag: Dynamic Programming**
 
 You are given two integer arrays `nums` and `multipliers` of size `n` and `m` respectively, where `n >= m`. The arrays are **1-indexed**.
 
@@ -108,6 +114,8 @@ The total score is 50 + 15 - 9 + 4 + 42 = 102.
 
 
 ### 1818. Minimum Absolute Sum Difference
+
+**Tag: Sort, Binary Search**
 
 You are given two positive integer arrays `nums1` and `nums2`, both of length `n`.
 

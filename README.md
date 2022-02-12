@@ -115,7 +115,7 @@ The total score is 50 + 15 - 9 + 4 + 42 = 102.
 
 ### 1818. Minimum Absolute Sum Difference
 
-**Tag: Sort, Binary Search**
+**Tag: Sorting, Binary Search**
 
 You are given two positive integer arrays `nums1` and `nums2`, both of length `n`.
 
@@ -160,4 +160,34 @@ This yields an absolute sum difference of |10-9| + |10-3| + |4-5| + |4-1| + |2-7
 ```
 
 **Added 2022/2/11.**
+
+
+
+### 1509. Minimum Difference Between Largest and Smallest Value in Three Moves
+
+**Tag: Sorting**
+
+You are given an integer array `nums`. In one move, you can choose one element of `nums` and change it by **any value**.
+
+Return the *minimum difference between the largest and smallest value of `nums` after performing **at most three moves***.
+
+**Example 1:**
+
+```
+Input: nums = [5,3,2,4]
+Output: 0
+Explanation: Change the array [5,3,2,4] to [2,2,2,2].
+The difference between the maximum and minimum is 2-2 = 0.
+```
+
+**Example 2:**
+
+```
+Input: nums = [1,5,0,10,14]
+Output: 1
+Explanation: Change the array [1,5,0,10,14] to [1,1,0,1,1]. 
+The difference between the maximum and minimum is 1-0 = 1.
+```
+
+**Added 2022/2/12.**
 

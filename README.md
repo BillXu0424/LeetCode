@@ -13,7 +13,7 @@ You are given two strings `s` and `t` of the same length and an integer `maxCost
 
 You want to change `s` to `t`. Changing the `i`th character of `s` to `i`th character of `t` costs `|s[i] - t[i]|` (i.e., the absolute difference between the ASCII values of the characters).
 
-Return the maximum length of a substring of `s` that can be changed to be the same as the corresponding substring of `t` with a cost less than or equal to `maxCost`. If there is no substring from `s` that can be changed to its corresponding substring from `t`, return `0`.
+Return the maximum length of a substring of `s` athat can be changed to be the same as the corresponding substring of `t` with a cost less than or equal to `maxCost`. If there is no substring from `s` that can be changed to its corresponding substring from `t`, return `0`.
 
 **Example 1:**
 
@@ -262,3 +262,39 @@ The maximum total value is 3 + 2 + 5 + 4 + 3 + 2 = 19.
 ```
 
 **Added 2022/2/14.**
+
+
+
+### 1738. Find Kth Largest XOR Coordinate Value
+
+You are given a 2D `matrix` of size `m x n`, consisting of non-negative integers. You are also given an integer `k`.
+
+The **value** of coordinate `(a, b)` of the matrix is the XOR of all `matrix[i][j]` where `0 <= i <= a < m` and `0 <= j <= b < n` **(0-indexed)**.
+
+Find the `k`th largest value **(1-indexed)** of all the coordinates of `matrix`.
+
+**Example 1:**
+
+```
+Input: matrix = [[5,2],[1,6]], k = 1
+Output: 7
+Explanation: The value of coordinate (0,1) is 5 XOR 2 = 7, which is the largest value.
+```
+
+**Example 2:**
+
+```
+Input: matrix = [[5,2],[1,6]], k = 2
+Output: 5
+Explanation: The value of coordinate (0,0) is 5 = 5, which is the 2nd largest value.
+```
+
+**Example 3:**
+
+```
+Input: matrix = [[5,2],[1,6]], k = 3
+Output: 4
+Explanation: The value of coordinate (1,0) is 5 XOR 1 = 4, which is the 3rd largest value.
+```
+
+**Added 2022/2/15.**

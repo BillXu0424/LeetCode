@@ -420,3 +420,10 @@ seatManager.unreserve(5); // Unreserve seat 5, so now the available seats are [5
 
 **Added 2022/2/21.**
 
+
+
+### 2075. Decode the Slanted Ciphertext
+
+**Tag: Simulation**
+
+**Added 2022/2/22.**

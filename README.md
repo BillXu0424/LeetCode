@@ -589,3 +589,100 @@ Output: false
 ```
 
 **Added 2022/2/27.**
+
+
+
+### 210. Course Schedule II
+
+**Tag: Topological Sort, BFS**
+
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you **must** take course `bi` first if you want to take course `ai`.
+
+- For example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.
+
+Return *the ordering of courses you should take to finish all courses*. If there are many valid answers, return **any** of them. If it is impossible to finish all courses, return **an empty array**.
+
+**Example 1:**
+
+```
+Input: numCourses = 2, prerequisites = [[1,0]]
+Output: [0,1]
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1].
+```
+
+**Example 2:**
+
+```
+Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
+Output: [0,2,1,3]
+Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0.
+So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
+```
+
+**Example 3:**
+
+```
+Input: numCourses = 1, prerequisites = []
+Output: [0]
+```
+
+**Added 2022/2/28.**
+
+
+
+### 712. Minimum ASCII Delete Sum for Two Strings
+
+**Tag: Dynamic Programming**
+Given two strings `s1` and `s2`, return *the lowest **ASCII** sum of deleted characters to make two strings equal*.
+
+**Example 1:**
+
+```
+Input: s1 = "sea", s2 = "eat"
+Output: 231
+Explanation: Deleting "s" from "sea" adds the ASCII value of "s" (115) to the sum.
+Deleting "t" from "eat" adds 116 to the sum.
+At the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this.
+```
+
+**Example 2:**
+
+```
+Input: s1 = "delete", s2 = "leet"
+Output: 403
+Explanation: Deleting "dee" from "delete" to turn the string into "let",
+adds 100[d] + 101[e] + 101[e] to the sum.
+Deleting "e" from "leet" adds 101[e] to the sum.
+At the end, both strings are equal to "let", and the answer is 100+101+101+101 = 403.
+If instead we turned both strings into "lee" or "eet", we would get answers of 433 or 417, which are higher.
+```
+
+**Added 2022/2/28.**
+
+
+
+### 554. Brick Wall
+
+**Tag: Hash map**
+
+There is a rectangular brick wall in front of you with `n` rows of bricks. The `ith` row has some number of bricks each of the same height (i.e., one unit) but they can be of different widths. The total width of each row is the same.
+
+Draw a vertical line from the top to the bottom and cross the least bricks. If your line goes through the edge of a brick, then the brick is not considered as crossed. You cannot draw a line just along one of the two vertical edges of the wall, in which case the line will obviously cross no bricks.
+
+Given the 2D array `wall` that contains the information about the wall, return *the minimum number of crossed bricks after drawing such a vertical line.*
+
+**Example 1:**
+
+```
+Input: wall = [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]]
+Output: 2
+```
+
+**Example 2:**
+
+```
+Input: wall = [[1],[1],[1]]
+Output: 3
+```
+
+**Added 2022/2/28.**

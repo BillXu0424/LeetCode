@@ -773,3 +773,79 @@ Output: 0
 ```
 
 **Added 2022/3/4.**
+
+
+
+### 518. Coin Change 2
+
+**Tag: Dynamic Programming**
+
+You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money.
+
+Return *the number of combinations that make up that amount*. If that amount of money cannot be made up by any combination of the coins, return `0`.
+
+You may assume that you have an infinite number of each kind of coin.
+
+The answer is **guaranteed** to fit into a signed **32-bit** integer.
+
+**Example 1:**
+
+```
+Input: amount = 5, coins = [1,2,5]
+Output: 4
+Explanation: there are four ways to make up the amount:
+5=5
+5=2+2+1
+5=2+1+1+1
+5=1+1+1+1+1
+```
+
+**Example 2:**
+
+```
+Input: amount = 3, coins = [2]
+Output: 0
+Explanation: the amount of 3 cannot be made up just with coins of 2.
+```
+
+**Example 3:**
+
+```
+Input: amount = 10, coins = [10]
+Output: 1
+```
+
+**Added 2022/3/5.**
+
+
+
+### 114. Flatten Binary Tree to Linked List
+
+Given the `root` of a binary tree, flatten the tree into a "linked list":
+
+- The "linked list" should use the same `TreeNode` class where the `right` child pointer points to the next node in the list and the `left` child pointer is always `null`.
+- The "linked list" should be in the same order as a **pre-order traversal** of the binary tree.
+
+**Example 1 (in level order):**
+
+```
+Input: root = [1,2,5,3,4,null,6]
+Output: [1,null,2,null,3,null,4,null,5,null,6]
+```
+
+**Example 2:**
+
+```
+Input: root = []
+Output: []
+```
+
+**Example 3:**
+
+```
+Input: root = [0]
+Output: [0]
+```
+
+**Added 2022/3/5.**
+

@@ -821,6 +821,8 @@ Output: 1
 
 ### 114. Flatten Binary Tree to Linked List
 
+**Tag: Binary Tree**
+
 Given the `root` of a binary tree, flatten the tree into a "linked list":
 
 - The "linked list" should use the same `TreeNode` class where the `right` child pointer points to the next node in the list and the `left` child pointer is always `null`.
@@ -849,3 +851,81 @@ Output: [0]
 
 **Added 2022/3/5.**
 
+
+
+### 1529. Minimum Suffix Flips
+
+**Tag: Simulation**
+
+You are given a **0-indexed** binary string `target` of length `n`. You have another binary string `s` of length `n` that is initially set to all zeros. You want to make `s` equal to `target`.
+
+In one operation, you can pick an index `i` where `0 <= i < n` and flip all bits in the **inclusive** range `[i, n - 1]`. Flip means changing `'0'` to `'1'` and `'1'` to `'0'`.
+
+Return *the minimum number of operations needed to make* `s` *equal to* `target`.
+
+**Example 1:**
+
+```
+Input: target = "10111"
+Output: 3
+Explanation: Initially, s = "00000".
+Choose index i = 2: "00000" -> "00111"
+Choose index i = 0: "00111" -> "11000"
+Choose index i = 1: "11000" -> "10111"
+We need at least 3 flip operations to form target.
+```
+
+**Example 2:**
+
+```
+Input: target = "101"
+Output: 3
+Explanation: Initially, s = "000".
+Choose index i = 0: "000" -> "111"
+Choose index i = 1: "111" -> "100"
+Choose index i = 2: "100" -> "101"
+We need at least 3 flip operations to form target.
+```
+
+**Example 3:**
+
+```
+Input: target = "00000"
+Output: 0
+Explanation: We do not need any operations since the initial s already equals target.
+```
+
+**Added 2022/3/6.**
+
+
+
+### 743. Network Delay Time
+
+**Tag: Minheap, Graph, Dijkstra**
+
+You are given a network of n nodes, labeled from `1` to `n`. You are also given `times`, a list of travel times as directed edges `times[i] = (ui, vi, wi)`, where `ui` is the source node, `vi` is the target node, and `wi` is the time it takes for a signal to travel from source to target.
+
+We will send a signal from a given node k. Return the time it takes for all the `n` nodes to receive the signal. If it is impossible for all the `n` nodes to receive the signal, return `-1`.
+
+**Example 1:**
+
+```
+Input: times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2
+Output: 2
+```
+
+**Example 2:**
+
+```
+Input: times = [[1,2,1]], n = 2, k = 1
+Output: 1
+```
+
+**Example 3:**
+
+```
+Input: times = [[1,2,1]], n = 2, k = 2
+Output: -1
+```
+
+**Added 2022/3/6.**
